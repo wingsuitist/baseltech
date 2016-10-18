@@ -4,8 +4,8 @@
 
 <app-login></app-login>
 
-<app-members></app-members>
+<app-members *ngIf="checkLogin()"></app-members>
 
-<app-news-list></app-news-list>
+<app-news-list *ngIf="checkLogin() == false "></app-news-list>
 
-<app-news-latest></app-news-latest>
+<app-news-latest *ngIf="checkLogin()"></app-news-latest>

@@ -1,3 +1,17 @@
-<p>
-  login works!
-</p>
+<div *ngIf="checkLogin() == false">
+  Username: <input #usernameInput value="Jonas"/>
+
+  <button (click)="login(usernameInput.value)">
+    Login
+  </button>
+</div>
+
+<div *ngIf="checkLogin()">
+  Hello: {{username}}
+
+  <button (click)="logout()">
+    Logout
+  </button>
+</div>
+
+<hr />

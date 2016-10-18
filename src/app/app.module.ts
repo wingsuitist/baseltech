@@ -12,6 +12,7 @@ import { NewsLatestComponent } from './news-latest/news-latest.component';
 
 import { LoginService } from './shared/login.service';
 import { NewsService } from './shared/news.service';
+import { MembersService } from './shared/members.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { NewsService } from './shared/news.service';
     FormsModule,
     HttpModule
   ],
-  providers: [ LoginService, NewsService ],
+  providers: [ LoginService, NewsService, MembersService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

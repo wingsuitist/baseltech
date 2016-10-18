@@ -1,3 +1,5 @@
-<p>
-  members works!
-</p>
+<h2>Members</h2>
+<div *ngFor="let member of members">
+  <img [src]="member.img"/>
+  {{member.name}}
+</div>

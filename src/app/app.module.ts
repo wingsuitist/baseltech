@@ -11,6 +11,7 @@ import { MembersComponent } from './members/members.component';
 import { NewsLatestComponent } from './news-latest/news-latest.component';
 
 import { LoginService } from './shared/login.service';
+import { NewsService } from './shared/news.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { LoginService } from './shared/login.service';
     FormsModule,
     HttpModule
   ],
-  providers: [ LoginService ],
+  providers: [ LoginService, NewsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

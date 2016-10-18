@@ -1,4 +1,15 @@
-<p>
-  news-list works!
-</p>
-<app-news-detail></app-news-detail>
+<h2>
+  News
+</h2>
+
+<ul>
+  <li *ngFor="let thisNews of news"
+    (click)="showNews(thisNews)">
+    {{thisNews.title}}
+  </li>
+</ul>
+
+<hr />
+
+<app-news-detail [news]="selectedNews">
+</app-news-detail>
